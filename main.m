@@ -157,36 +157,17 @@ for i = 3:size(mainDir,1)
         
         volIm = currFile.getFrame(currPart.frame(1));
         
-%         if list.frame(1)==58
-%             disp('stop');
-%             
-%         end
-%         
-%         if list.frame(1)==87
-%             disp('stop');
-%         end
-
+%  
         SRList.row(ct) = mean(currPart.row);
         SRList.col(ct) = mean(currPart.col);
         SRList.t(ct) = currPart.frame(1);
         
         [partVolIm] = getPartVolIm(SRList(ct,:),15,volIm);
         
-        if SRList.t(ct) == 165
-            disp('stop')
-        end
-        
         if ~isempty(partVolIm)
             planePos = currFile.calibrated.oRelZPos;
             SRList.z(ct) = calcZ(partVolIm,planePos);
-            
-%             if ~isnan(SRList.z(ct))
-%                 [val,idx] = min(abs(SRList.z(ct)-planePos));
-%                 [x,y,~,~] = Localization.gradFit(partVolIm(:,:,idx),round(size(partVolIm,1)/2)-3);
-%             else
-%                 x = NaN;
-%                 y = NaN;
-%             end
+
  
             %previously
             SRList.row(ct) = mean(currPart.row)*pxSize;
