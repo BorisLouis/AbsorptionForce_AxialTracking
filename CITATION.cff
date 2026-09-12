@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the repository
+  using its Zenodo DOI and the associated paper listed below.
+type: software
+title: "AbsorptionForce_AxialTracking"
+authors:
+  - family-names: "Louis"
+    given-names: "Boris"
+repository-code: "https://github.com/BorisLouis/AbsorptionForce_AxialTracking"
+
+# Uncomment and fill these when available:
+# version: "1.0.0"
+# date-released: "YYYY-MM-DD"
+# doi: "YOUR ZENODO DOI"
+
+references:
+  - type: article
+    title: >-
+      Chemical Modulation of Optical Forces for Dynamic
+      Light-Driven Materials
+    authors:
+      - family-names: "Torrella-Adriaensen"
+        given-names: "Laia"
+      - family-names: "Louis"
+        given-names: "Boris"
+      - family-names: "Satpathy"
+        given-names: "Jagannath"
+      - family-names: "Tarrats-Duran"
+        given-names: "Anna"
+      - family-names: "Magaña"
+        given-names: "Jose Rodrigo"
+      - family-names: "Fornaguera"
+        given-names: "Cristina"
+      - family-names: "Nonell"
+        given-names: "Santi"
+      - family-names: "Rocha"
+        given-names: "Susana"
+      - family-names: "Hofkens"
+        given-names: "Johan"
+      - family-names: "Bresolí-Obach"
+        given-names: "Roger"
+    journal: "ACS Photonics"
+    volume: "13"
+    issue: "16"
+    start: "4577"
+    end: "4587"
+    year: 2026
+    doi: "10.1021/acsphotonics.6c00535"
